@@ -1,6 +1,6 @@
 ---
-  layout: page
-  title: "PAGE-TITLE"
+layout: page
+title: "PAGE-TITLE"
 ---
 
 # CPU-IA

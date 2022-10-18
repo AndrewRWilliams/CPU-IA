@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "CPU-IA"
-permalink: /CPU-IA2
+permalink: /CPU-IA
 ---
 # CPU-IA
 CPU-IA

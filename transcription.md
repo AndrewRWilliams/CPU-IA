@@ -4,7 +4,7 @@ title: "CPU-IA"
 permalink: transcription
 ---
 # CPU-IA
-Stable diffusion
+Transcription de fichiers audio et vidéo
 
 <script type="module"
 src="https://gradio.s3-us-west-2.amazonaws.com/3.5/gradio.js">

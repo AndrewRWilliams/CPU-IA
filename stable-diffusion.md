@@ -9,4 +9,4 @@ permalink: stable-diffusion
 src="https://gradio.s3-us-west-2.amazonaws.com/3.5/gradio.js">
 </script>
 
-<gradio-app space="stabilityai/stable-diffusion"></gradio-app>
+<gradio-app space="AndrewRWilliams/stable_diffusion_webui"></gradio-app>

@@ -23,10 +23,11 @@ Here is some initial text.
   }
 
 document.onmouseup = document.onkeyup = document.onselectionchange = function() {
-//  var activeE1 = document.activeElement;
-//  var activeElId = activeEl ? activeEl.id : null;
-//  var prefix = "sel_";
-//  var inputElement = prefix.concat(activeElId);
+  var activeE1 = document.activeElement;
+  var activeElId = activeEl ? activeEl.id : null;
+  var prefix = "sel_";
+  var inputElement = prefix.concat(activeElId);
+  document.getElementById("debug").value = inputElement;
   document.getElementById("sel_text").value = getSelectionText();
 };
 </script>
@@ -41,3 +42,4 @@ associated output box must have id that is "sel_" concat with id, e.g. "sel_text
 <input id="text" value="Some text in a text input">
 <br>
 <textarea>Some text in a textarea</textarea>
+<textarea id="debug" rows="3" cols="50"></textarea>

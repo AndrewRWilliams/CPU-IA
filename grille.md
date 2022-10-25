@@ -23,16 +23,23 @@ Here is some initial text.
   }
 
 document.onmouseup = document.onkeyup = document.onselectionchange = function() {
-  document.getElementById("sel").value = getSelectionText();
+  
+  var activeE1 = document.activeElement;
+  var activeElTagName = activeEl ? activeEl.tagName.toLowerCase() : null;
+  var prefix = "sel_";
+  var inputElement = prefix.concat(activeElTagName);
+  document.getElementById(inputElement).value = getSelectionText();
 };
 </script>
 
+// how to use
+// selection box has an id e.g. "text"
+// associated output box must have id that is "sel_" concat with id, e.g. "sel_text"
 <br>
-<textarea id="sel2" rows="3" cols="50"></textarea>
+<textarea id="sel_text" rows="3" cols="50"></textarea>
 <p>Please select some text.</p>
-<input value="Some text in a text input">
+<input id="text" value="Some text in a text input">
 <br>
-<textarea id="sel" rows="3" cols="50"></textarea>
 <input type="search" value="Some text in a search input">
 <br>
 <input type="tel" value="4872349749823">

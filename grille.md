@@ -24,10 +24,10 @@ Here is some initial text.
 
 document.onmouseup = document.onkeyup = document.onselectionchange = function() {
   var activeE1 = document.activeElement;
-  var activeElId = activeEl ? activeEl.id : null;
-  var prefix = "sel_";
-  var inputElement = prefix.concat(activeElId);
-  document.getElementById("debug").value = inputElement;
+//  var activeElId = activeEl ? activeEl.id : null;
+//  var prefix = "sel_";
+//  var inputElement = prefix.concat(activeElId);
+  document.getElementById("debug").value = activeEl.id;
   document.getElementById("sel_text").value = getSelectionText();
 };
 </script>

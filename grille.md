@@ -31,10 +31,11 @@ document.onmouseup = document.onkeyup = document.onselectionchange = function() 
   document.getElementById(inputElement).value = getSelectionText();
 };
 </script>
-
-// how to use
-// selection box has an id e.g. "text"
-// associated output box must have id that is "sel_" concat with id, e.g. "sel_text"
+<!--- 
+how to use
+selection box has an id e.g. "text"
+associated output box must have id that is "sel_" concat with id, e.g. "sel_text"
+-->
 <br>
 <textarea id="sel_text" rows="3" cols="50"></textarea>
 <p>Please select some text.</p>

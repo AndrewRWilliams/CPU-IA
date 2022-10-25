@@ -23,9 +23,8 @@ Here is some initial text.
   }
 
 document.onmouseup = document.onkeyup = document.onselectionchange = function() {
-  
   var activeE1 = document.activeElement;
-  var activeElId = activeEl ? activeEl.id.toLowerCase() : null;
+  var activeElId = activeEl ? activeEl.id : null;
   var prefix = "sel_";
   var inputElement = prefix.concat(activeElId);
   document.getElementById(inputElement).value = getSelectionText();
@@ -40,9 +39,5 @@ associated output box must have id that is "sel_" concat with id, e.g. "sel_text
 <textarea id="sel_text" rows="3" cols="50"></textarea>
 <p>Please select some text.</p>
 <input id="text" value="Some text in a text input">
-<br>
-<input type="search" value="Some text in a search input">
-<br>
-<input type="tel" value="4872349749823">
 <br>
 <textarea>Some text in a textarea</textarea>

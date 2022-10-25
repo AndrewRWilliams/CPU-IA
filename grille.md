@@ -39,7 +39,4 @@ associated output box must have id that is "sel_" concat with id, e.g. "sel_text
 <br>
 <textarea id="sel_text" rows="3" cols="50"></textarea>
 <p>Please select some text.</p>
-<input id="text" value="Some text in a text input">
-<br>
-<textarea>Some text in a textarea</textarea>
-<textarea id="debug" rows="3" cols="50"></textarea>
+<textarea id="text" value="Some text in a text input"></textarea>

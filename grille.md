@@ -25,9 +25,9 @@ Here is some initial text.
 document.onmouseup = document.onkeyup = document.onselectionchange = function() {
   
   var activeE1 = document.activeElement;
-  var activeElTagName = activeEl ? activeEl.tagName.toLowerCase() : null;
+  var activeElId = activeEl ? activeEl.id.toLowerCase() : null;
   var prefix = "sel_";
-  var inputElement = prefix.concat(activeElTagName);
+  var inputElement = prefix.concat(activeElId);
   document.getElementById(inputElement).value = getSelectionText();
 };
 </script>

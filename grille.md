@@ -27,7 +27,7 @@ document.onmouseup = document.onkeyup = document.onselectionchange = function() 
 //  var activeElId = activeEl ? activeEl.id : null;
 //  var prefix = "sel_";
 //  var inputElement = prefix.concat(activeElId);
-  document.getElementById("debug").value = activeEl.id;
+//  document.getElementById("debug").value = activeEl.id;
   document.getElementById("sel_text").value = getSelectionText();
 };
 </script>

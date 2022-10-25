@@ -1,22 +1,22 @@
 #Grille 2
 
 <script>
-function onMouseUp(e) {
-  const activeTextarea = document.activeElement;
-  const selection = activeTextarea.value.substring(
-    activeTextarea.selectionStart, activeTextarea.selectionEnd
-  );
+  function onMouseUp(e) {
+    const activeTextarea = document.activeElement;
+    const selection = activeTextarea.value.substring(
+      activeTextarea.selectionStart, activeTextarea.selectionEnd
+    );
 
-  const outputElement = document.getElementById('output-element');
-  const outputText = document.getElementById('output-text');
-  outputElement.innerHTML = activeTextarea.id;
-  outputText.innerHTML = selection;
-}
+    const outputElement = document.getElementById('output-element');
+    const outputText = document.getElementById('output-text');
+    outputElement.innerHTML = activeTextarea.id;
+    outputText.innerHTML = selection;
+  }
 
-const textarea1 = document.getElementById('ta-example-one');
-const textarea2 = document.getElementById('ta-example-two');
-textarea1.addEventListener('mouseup', onMouseUp, false);
-textarea2.addEventListener('mouseup', onMouseUp, false);
+  const textarea1 = document.getElementById('ta-example-one');
+  const textarea2 = document.getElementById('ta-example-two');
+  textarea1.addEventListener('mouseup', onMouseUp, false);
+  textarea2.addEventListener('mouseup', onMouseUp, false);
 </script>
 
 <p>Select some text from one of the text areas below:</p>

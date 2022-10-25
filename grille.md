@@ -29,6 +29,7 @@ document.onmouseup = document.onkeyup = document.onselectionchange = function() 
 
 <br>
 <textarea id="sel" rows="3" cols="50"></textarea>
+<textarea id="sel" rows="3" cols="50"></textarea>
 <p>Please select some text.</p>
 <input value="Some text in a text input">
 <br>

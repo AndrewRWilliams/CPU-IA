@@ -1,3 +1,10 @@
+<!--- 
+https://stackoverflow.com/questions/5379120/get-the-highlighted-selected-text
+-->
+
+# Grille d'évaluation
+Here is some initial text. 
+
 <script>
   function getSelectionText() {
     var text = "";

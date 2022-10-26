@@ -6,7 +6,9 @@ https://stackoverflow.com/questions/5379120/get-the-highlighted-selected-text
 Here is some initial text. 
 
 <script>
-  function getSelectionText() {
+  // Current functionality: any selected texts gets put in the same box
+  // desired functionality: selected text in a specific textarea gets put in its respective box
+  function getSelectionText(input_id) {
     var text = "";
     var activeEl = document.activeElement;
     var activeElTagName = activeEl ? activeEl.tagName.toLowerCase() : null;
@@ -30,6 +32,8 @@ document.onmouseup = document.onkeyup = document.onselectionchange = function() 
 //  document.getElementById("debug").value = activeEl.id;
   document.getElementById("sel_text").value = getSelectionText();
 };
+
+// write a function that takes the id of the input box and the id of the output box as arguments and then does the following: takes the selected text from the output box and puts it in the output box.
 </script>
 <!--- 
 how to use

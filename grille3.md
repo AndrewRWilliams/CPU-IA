@@ -162,7 +162,11 @@ Vous avez fait un travail médiocre pour ce critère. Vous devez travailler dur 
 
 <textarea id="critere1" cols=10 rows=5>Critère 1.</textarea> <textarea id="critere1_excel" cols=25 rows=5>Critère 1.1 est excellent. Critère 1.2 est excellent. Critère 1.3 est excellent.</textarea> <textarea id="critere1_moyen" cols=25 rows=5>Critère 1.1 est moyen. Critère 1.2 est moyen. Critère 1.3 est moyen. </textarea> <textarea id="critere1_poche" cols=25 rows=5>Critère 1.1 est poche. Critère 1.2 est poche. Critère 1.3 est poche.</textarea>
 
+<br>
+
 <textarea id="critere2" cols=10 rows=5>Critère 2.</textarea> <textarea id="critere2_excel" cols=25 rows=5>Critère 2.1 est excellent. Critère 2.2 est excellent. Critère 2.3 est excellent.</textarea> <textarea id="critere2_moyen" cols=25 rows=5>Critère 2.1 est moyen. Critère 2.2 est moyen. Critère 2.3 est moyen. </textarea> <textarea id="critere2_poche" cols=25 rows=5>Critère 2.1 est poche. Critère 2.2 est poche. Critère 2.3 est poche. </textarea>
+
+<br>
 
 <textarea id="critere3" cols=10 rows=5> Critère 3.</textarea> <textarea id="critere3_excel" cols=25 rows=5>Critère 3.1 est excellent. Critère 3.2 est excellent. Critère 3.3 est excellent.</textarea> <textarea id="critere3_moyen" cols=25 rows=5>Critère 3.1 est moyen. Critère 3.2 est moyen. Critère 3.3 est moyen. </textarea> <textarea id="critere3_poche" cols=25 rows=5>Critère 3.1 est poche. Critère 3.2 est poche. Critère 3.3 est poche. </textarea>
 

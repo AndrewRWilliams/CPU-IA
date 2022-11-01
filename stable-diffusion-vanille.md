@@ -10,4 +10,4 @@ permalink: stable-diffusion
 src="https://gradio.s3-us-west-2.amazonaws.com/3.5/gradio.js">
 </script>
 
-<gradio-app space="stabilityai/stable-diffusion"></gradio-app>
+<gradio-app space="runwayml/stable-diffusion-v1-5"></gradio-app>

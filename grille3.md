@@ -1,5 +1,66 @@
-# Grille 3
+# Grille de correction
 
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
 
 <script>
 
@@ -44,28 +105,87 @@ function id(e) {
   // When this function is used as an event handler: this === e.currentTarget
 }
 
+function toggleEditing() {
+    var textareas = document.getElementsByTagName("*");
+    for (var i = 0; i < textareas.length; i++) {
+        if (textareas[i].readOnly == "true") {
+            textareas[i].readOnly = "false";
+        } else {
+            textareas[i].readOnly = "true";
+        }
+    }
+}
+
+// write a function that changes the value of the critere1 textarea to a "test change".
+function testChange() {
+    var textareas = document.getElementsByTagName("*");
+    for (var i = 0; i < textareas.length; i++) {
+        if (textareas[i].id == "retroaction") {
+          // get the text from textareas sel_critere1, sel_critere2, sel_critere3
+          // concatenate the text from the textareas with commas between them and put it in the textarea retroaction 
+          textareas[i].value = 'Critère 1.1 : \n\nVous avez fait un excellent travail avec ce critère. Continuez à faire du bon travail !\n\nCritère 2.2 : \n\nVous avez fait un travail moyen pour ce critère. Continuez à travailler et vous allez vous améliorer !\n\nCritère 3.3 : \n\nVous avez fait un travail médiocre pour ce critère. Vous devez travailler dur pour vous améliorer.';
+        } 
+    }
+}
+
+// write a function that clears the value of a textarea. The input of the function should be the id of the textarea.
+function clearTextarea(id) {
+    document.getElementById(id).value = "";
+}
+
+
+// write a function that sends a POST request to the server with the data from the textarea retroaction
+
+
 </script>
 
 <!-- <br><textarea id="sel_textid" rows="3" cols="50"></textarea> -->
 <!-- <textarea id="textid" value="Some text in a text input"></textarea>
 <br> -->
-<p>Critère 1.</p>
 
-<textarea id="critere1">Critère 1.</textarea> <textarea id="critere1_excel">Critère 1 est excellent.</textarea> <textarea id="critere1_moyen">Critère 1 est moyen.</textarea> <textarea id="critere1_poche">Critère 1 est poche.</textarea>
 
-<textarea id="critere2">Critère 2.</textarea> <textarea id="critere2_excel">Critère 2 est excellent.</textarea> <textarea id="critere2_moyen">Critère 2 est moyen.</textarea> <textarea id="critere2_poche">Critère 2 est poche.</textarea>
+Critère 1.1 : 
 
-<textarea id="critere3">Critère 3.</textarea> <textarea id="critere3_excel">Critère 3 est excellent.</textarea> <textarea id="critere3_moyen">Critère 3 est moyen.</textarea> <textarea id="critere3_poche">Critère 3 est poche.</textarea>
+Vous avez fait un excellent travail avec ce critère. Continuez à faire du bon travail !
+
+Critère 2.2 : 
+
+Vous avez fait un travail moyen pour ce critère. Continuez à travailler et vous allez vous améliorer !
+
+Critère 3.3 : 
+
+Vous avez fait un travail médiocre pour ce critère. Vous devez travailler dur pour vous améliorer.
+
+// Turn the text above into javascript variables and then concatenate them with commas between them and put them in the textarea retroaction
+
+
+
+<textarea id="critere1" cols=10 rows=5>Critère 1.</textarea> <textarea id="critere1_excel" cols=25 rows=5>Critère 1.1 est excellent. Critère 1.2 est excellent. Critère 1.3 est excellent.</textarea> <textarea id="critere1_moyen" cols=25 rows=5>Critère 1.1 est moyen. Critère 1.2 est moyen. Critère 1.3 est moyen. </textarea> <textarea id="critere1_poche" cols=25 rows=5>Critère 1.1 est poche. Critère 1.2 est poche. Critère 1.3 est poche.</textarea>
+
+<textarea id="critere2" cols=10 rows=5>Critère 2.</textarea> <textarea id="critere2_excel" cols=25 rows=5>Critère 2.1 est excellent. Critère 2.2 est excellent. Critère 2.3 est excellent.</textarea> <textarea id="critere2_moyen" cols=25 rows=5>Critère 2.1 est moyen. Critère 2.2 est moyen. Critère 2.3 est moyen. </textarea> <textarea id="critere2_poche" cols=25 rows=5>Critère 2.1 est poche. Critère 2.2 est poche. Critère 2.3 est poche. </textarea>
+
+<textarea id="critere3" cols=10 rows=5> Critère 3.</textarea> <textarea id="critere3_excel" cols=25 rows=5>Critère 3.1 est excellent. Critère 3.2 est excellent. Critère 3.3 est excellent.</textarea> <textarea id="critere3_moyen" cols=25 rows=5>Critère 3.1 est moyen. Critère 3.2 est moyen. Critère 3.3 est moyen. </textarea> <textarea id="critere3_poche" cols=25 rows=5>Critère 3.1 est poche. Critère 3.2 est poche. Critère 3.3 est poche. </textarea>
+
+<!--<label class="switch">
+  <input type="checkbox" checked onclick="toggleEditing()">
+  <span class="slider round"></span>
+</label>
+-->
 
 <br>
-<p>Les extraits.</p>
-<br><textarea id="sel_critere1" cols=90>L'extrait du critère 1.</textarea>
-<br><textarea id="sel_critere2" cols=90>L'extrait du critère 2.</textarea>
-<br><textarea id="sel_critere3" cols=90>L'extrait du critère 3.</textarea> 
+<h2>Les extraits.</h2>
+<br><textarea id="sel_critere1" cols=90>L'extrait du critère 1.</textarea> <button onclick="clearTextarea('sel_critere1')">Effacer</button>
+<br><textarea id="sel_critere2" cols=90>L'extrait du critère 2.</textarea> <button onclick="clearTextarea('sel_critere2')">Effacer</button>
+<br><textarea id="sel_critere3" cols=90>L'extrait du critère 3.</textarea> <button onclick="clearTextarea('sel_critere3')">Effacer</button>
 
-<p>Le texte final.</p>
-<br><textarea id="retroaction"></textarea> 
+<br>
+<h2>La rétroaction.</h2>
+<br><textarea id="retroaction" cols=90 rows=20></textarea> 
 
+
+<button onclick="testChange()">Générer la rétroaction.</button>
+
+<h2>Les trois questions de Hattie.</h2>
 <!-- <table>
 <thead>
   <tr>

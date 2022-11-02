@@ -144,21 +144,6 @@ function clearTextarea(id) {
 <br> -->
 
 
-Critère 1.1 : 
-
-Vous avez fait un excellent travail avec ce critère. Continuez à faire du bon travail !
-
-Critère 2.2 : 
-
-Vous avez fait un travail moyen pour ce critère. Continuez à travailler et vous allez vous améliorer !
-
-Critère 3.3 : 
-
-Vous avez fait un travail médiocre pour ce critère. Vous devez travailler dur pour vous améliorer.
-
-// Turn the text above into javascript variables and then concatenate them with commas between them and put them in the textarea retroaction
-
-
 
 <textarea id="critere1" cols=10 rows=5>Critère 1.</textarea> <textarea id="critere1_excel" cols=25 rows=5>Critère 1.1 est excellent. Critère 1.2 est excellent. Critère 1.3 est excellent.</textarea> <textarea id="critere1_moyen" cols=25 rows=5>Critère 1.1 est moyen. Critère 1.2 est moyen. Critère 1.3 est moyen. </textarea> <textarea id="critere1_poche" cols=25 rows=5>Critère 1.1 est poche. Critère 1.2 est poche. Critère 1.3 est poche.</textarea>
 
@@ -190,6 +175,11 @@ Vous avez fait un travail médiocre pour ce critère. Vous devez travailler dur 
 <button onclick="testChange()">Générer la rétroaction.</button>
 
 <h2>Les trois questions de Hattie.</h2>
+
+<h3> Òu vais-je? (but final) </h3>
+<h3> Òu suis-je? (évaluation présente) </h3>
+<h3> Òu aller maintenant? (prochaines étapes) </h3>
+
 <!-- <table>
 <thead>
   <tr>

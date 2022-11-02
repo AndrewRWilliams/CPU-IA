@@ -143,6 +143,10 @@ function clearTextarea(id) {
 <!-- <textarea id="textid" value="Some text in a text input"></textarea>
 <br> -->
 
+<h2>But</h2>
+* Réduire le temps entre la soumission du travail et la rétroaction (utile pour des cours avec beaucoup d'étudiants)
+* Guider la composition de rétroactions pour les enseignants pour guider des réflexions métacognitives
+* Faire le pont entre les rétroactions automatiques et les rétroactions manuelles
 
 
 <textarea id="critere1" cols=10 rows=5>Critère 1.</textarea> <textarea id="critere1_excel" cols=25 rows=5>Critère 1.1 est excellent. Critère 1.2 est excellent. Critère 1.3 est excellent.</textarea> <textarea id="critere1_moyen" cols=25 rows=5>Critère 1.1 est moyen. Critère 1.2 est moyen. Critère 1.3 est moyen. </textarea> <textarea id="critere1_poche" cols=25 rows=5>Critère 1.1 est poche. Critère 1.2 est poche. Critère 1.3 est poche.</textarea>
@@ -174,11 +178,14 @@ function clearTextarea(id) {
 
 <button onclick="testChange()">Générer la rétroaction.</button>
 
+
+
 <h2>Les trois questions de Hattie.</h2>
 
 <h3> Òu vais-je? (but final) </h3>
 <h3> Òu suis-je? (évaluation présente) </h3>
 <h3> Òu aller maintenant? (prochaines étapes) </h3>
+
 
 <!-- <table>
 <thead>

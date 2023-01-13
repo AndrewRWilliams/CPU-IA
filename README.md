@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<link rel="stylesheet" type="text/css" href="path/to/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 
 # CPU-IA
 CPU-IA

@@ -1,0 +1,21 @@
+/* This is a CSS comment */
+
+/* Select the body element and set the font family */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Select all h1 elements and set their color */
+h1 {
+    color: blue;
+}
+
+/* Select all elements with class "highlight" and set their background color */
+.highlight {
+    background-color: yellow;
+}
+
+/* Select the element with id "special" and set its font size */
+#special {
+    font-size: 2em;
+}

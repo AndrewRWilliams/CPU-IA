@@ -1,3 +1,8 @@
+---
+layout: page
+title: "CPU-IA"
+permalink: readme
+---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">

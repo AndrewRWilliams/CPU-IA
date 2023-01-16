@@ -11,6 +11,15 @@ h1 {
     font-size: 72px;
 }
 
+h2 {
+    color: #003D5F;
+}
+
+h3 {
+    color: #006BB6;
+}
+
+
 /* Select all elements with class "highlight" and set their background color */
 /* .highlight {
     background-color: yellow;

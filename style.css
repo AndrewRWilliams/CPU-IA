@@ -7,16 +7,30 @@
  */
 /* Select all h1 elements and set their color */
 h1 {
-    color: #0B4B7A;
-    font-size: 72px;
+  color: #0B4B7A;
+  font-size: 72px;
 }
 
 h2 {
-    color: #003D5F;
+  color: #003D5F;
 }
 
 h3 {
-    color: #006BB6;
+  color: #006BB6;
+}
+
+.demo_button {
+  color: #fff;
+  background: #006BB6;
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 10px;
+  text-align: center
+}
+
+.demo_button:hover {
+  background-color: #318CE7;
+  transition: 0.2s;
 }
 
 
@@ -27,11 +41,11 @@ h3 {
  */
 /* Select the element with id "special" and set its font size */
 #special {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 nav {
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 
@@ -40,7 +54,7 @@ nav {
   position: relative;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 0 29px 0 rgba(13, 21, 36, 0.22); 
+  box-shadow: 0 0 29px 0 rgba(13, 21, 36, 0.22);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
@@ -48,4 +62,5 @@ nav {
 
 .icon-box:hover {
   transform: scale(1.08);
+  /* todo: change color on hover */
 }

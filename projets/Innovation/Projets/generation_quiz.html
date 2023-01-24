@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 
 <body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
@@ -71,37 +71,12 @@
         </nav>
     </header>
     <main style="margin-top: 160px; margin-bottom: 80px;">
-        <div class="container position-relative animate__animated animate__fadeInUp animate__slow">
-            <div class="container-fluid mx-auto text-center" style="max-width: 1200px;">
-                <h1 class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"><strong>L'IA en
-                        éducation</strong></h1>
-                <h1><strong>à l'Université de Montréal</strong></h1>
-                <h2><small>Une initiative du Centre de Pédagogie Universitaire</small></p2>
-            </div>
-            <div class="container animate__animated animate__fadeInUp animate__slow"
-                style="margin-top: 80px; margin-bottom: 80px;">
-                <div class="row">
-                    <div class="col-sm text-center">
-                        <div class="icon-box">
-                            <i class="fas fa-check-circle" style="color: #0B4B7A;"></i>
-                            <h3>Adoption</h3>
-                        </div>
-                    </div>
-                    <div class="col-sm text-center">
-                        <div class="icon-box">
-                            <i class="fas fa-rocket" style="color: #0B4B7A;"></i>
-                            <h3>Innovation</h3>
-                        </div>
-                    </div>
-                    <div class="col-sm text-center">
-                        <div class="icon-box">
-                            <i class="fas fa-lightbulb" style="color: #0B4B7A;"></i>
-                            <h3>Sensibilisation</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h1>Générateur de paires de questions-réponses</h1>
+        <p>Notre générateur de paires de questions-réponses vous permet de créer rapidement et facilement des jeux de
+            questions-réponses pour tester vos connaissances ou celles de vos élèves. Il suffit de saisir vos propres
+            questions et réponses, ou de choisir parmi notre base de données de questions prédéfinies. Commencez à créer
+            des jeux de questions-réponses amusants et interactifs dès maintenant!</p>
+        <gradio-app src="https://andrewrwilliams-qa-gen.hf.space"></gradio-app>
     </main>
     <footer class="text-center">
         <div class="container-fluid" style="max-width: 1200px;">
@@ -117,6 +92,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.16.2/gradio.js">
+    </script>
+
 </body>
 
 </html>

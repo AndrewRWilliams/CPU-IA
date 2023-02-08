@@ -35,10 +35,11 @@ h3 {
 
 .sleek-line {
   border: none;
-  border-bottom: 2px solid #003D5F;
+  border-bottom: 1px solid #003D5F;
   font-size: 18px;
   width: 100%;
   outline: none;
+  background-color: transparent;
 }
 
 
@@ -52,9 +53,9 @@ h3 {
   font-size: 2em;
 }
 
-nav {
+/* nav {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-}
+} */
 
 
 .icon-box {
